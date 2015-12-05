@@ -12,17 +12,15 @@ public class Main {
         Scanner scanner1 = new Scanner(System.in);
              int rata = scanner1.nextByte();
         double a = 2.5 / 100;
-        double b = 5 / 100;
-        double c = 10 / 100;
+        double b = 5.0 / 100;
+        double c = 10.0 / 100;
                 double Cena1 = cena + (cena * a);
                 double Kwota1 = Cena1 / rata;
                 double Cena2 = cena + (cena * b);
                 double Kwota2 = Cena2 / rata;
                 double Cena3 = cena + (cena * c);
                 double Kwota3 = Cena3 / rata;
-
-
-        if (6 <= rata && rata >= 12) {
+        if (rata >= 6 && rata <= 12) {
             System.out.println("Przy " + rata + " ratach. Kwota do splaty " + Cena1 + " zl,");
             System.out.println("kwota na rate " + Kwota1 + " zl.");
         } else if (13 <= rata && rata <= 24) {
